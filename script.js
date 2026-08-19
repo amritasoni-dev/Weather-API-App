@@ -36,14 +36,15 @@ async function getfetchData(endPoint , city){
     const response =await fetch(apiURL)
     return response.json()
 }
+
 function getWeatherIcon(id){
-    if (id <= 232) return`./thunderstorm.svg`
-    if (id <= 321) return`./drizzle.svg`
-    if (id <= 521) return`./rain.svg`
-    if (id <= 622) return`./snow.svg`
-    if (id <= 781) return`./atmosphere.svg`
-    if (id <= 800) return`./clear.svg`
-    else return`./clouds.svg`
+    if (id <= 232) return "./thunderstorm.svg";
+    if (id <= 321) return "./drizzle.svg";
+    if (id <= 521) return "./rain.svg";
+    if (id <= 622) return "./snow.svg";
+    if (id <= 781) return "./atmosphere.svg";
+    if (id <= 800) return "./clear.svg";
+    else return "./clouds.svg";
 }
 
 function getCurrentDate(){
